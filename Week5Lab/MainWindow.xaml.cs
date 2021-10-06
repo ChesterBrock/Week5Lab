@@ -1,4 +1,19 @@
-﻿using System;
+﻿/// Chapter No. 5		Exercise No. 1
+/// File Name: MainWindow.xaml.cs
+/// @author: Chester Brock 
+/// Date:  Sep 20, 2021
+///
+/// Problem Statement:  create a GUI that takes in a speed limit and your speed.   
+/// 
+/// 
+/// Overall Plan:
+/// 1) Prompt for speed limit and user speed
+/// 2) Check if your sped is under or over the posted speed limit 
+/// 3) If the speed is over 25 mph add $250 penalty 
+/// 4) use green, yellow, and red backgrounds to indacate the status of the speed. 
+///
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
