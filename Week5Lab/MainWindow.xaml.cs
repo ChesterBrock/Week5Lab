@@ -34,16 +34,19 @@ namespace Week5Lab
             if(yourSpeed <= speedLimit) {
                 ResultLabel.Content = "Good Speed!";
                 fine = 0.00;
+                TempCanvas.Background = Brushes.Green;
             }
             else if(yourSpeed > speedLimit + 25){
                 ResultLabel.Content = "Speeding/Penalty";
                 fine = (yourSpeed - speedLimit) * 7 + 60 + 250;
+                TempCanvas.Background = Brushes.Red;
             }
             else if(yourSpeed > speedLimit){
                 ResultLabel.Content = "Speeding/No Penalty";
                 fine = (yourSpeed - speedLimit) * 7 + 60;
+                TempCanvas.Background = Brushes.Yellow;
             }
-            MessageBox.Show("Your fine is: " + fine);
+            MessageBox.Show("Your fine is: $" + fine + ".00");
 
         }
     }
